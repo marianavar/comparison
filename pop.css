@@ -13,7 +13,7 @@ tr {border-bottom: 1px solid #cceecc;}
 th {border-bottom: 2px solid #cceecc;}
 th, td {padding: 0.5rem 2vw;}
 td {text-align: center;}
-th:nth-of-type(1), td:nth-of-type(1) {text-align: left;}
+th:nth-of-type(1), td:nth-of-type(1) {text-align: left; color:#898989}
 
 .logo_compare{
   width:15rem;
@@ -24,14 +24,27 @@ th:nth-of-type(1), td:nth-of-type(1) {text-align: left;}
 .check_compare{
   width:2rem;
 }
+
 .x_compare{
   width:1.5rem;
   height: 1.5rem;
+
 }
-td{
+
+.features_compare{
   font-weight: 300;
+}
+
+.off_blend{
+  background : #84d0FF;
+  background-blend-mode: screen;
+}
+
+td{
+  font-weight: 600;
   padding-top:1rem;
 }
+
 
 button.green_compare {
  position: relative;
@@ -100,26 +113,28 @@ button.grey_compare {
     margin-right: 19.5rem;
     padding-bottom: 2rem;
 }
-    
+
+
 .Blue_compare{
-  color: #00b0f0 !important;
+  color: #6DD852 !important;
 }
 
 .thin_compare{
-  font-weight: 300;
+  color: #00b0f0;
 }
 
 .but_compare{
     text-align: center;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction:column;
 }
 
 a{
-  text-decoration: none;
-  margin-right:1rem;
-  font-weight:350;
-  font-size:.9rem;
+   margin-top: .5rem;
+    font-weight: 350;
+    font-size: .9rem;
 }
 
 small{
@@ -137,7 +152,9 @@ small{
 @media (max-width: 48rem) {
   .logo_compare{
     width:12rem;
-    padding:1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .main_compare{
     border-width: 50px;
@@ -145,5 +162,9 @@ small{
     box-shadow: 6px 6px 40px 5px rgba(170,170,170,0.3);
     padding-bottom: 2rem;
     margin:0;
+  }
+
+  td{
+    font-weight: 500;
   }
 }
